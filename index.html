@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Quiz</title>
+  </head>
+  <body>
+    <!-- this is the scores link and the timer -->
+    <div class="scores"><a>View Highscores</a></div>
+
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <!-- the start game container -->
+  
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1>Quiz Game</h1>
+        <p>answer my questions!!!!</p>
+        <button id="start">Start Game</button>
+      </div>
+    </div>
+
+<!-- the questions container -->
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div id="choices" class="choices"></div>
+    </div>
+    
+<!-- this is the game over screen -->
+    <div class="hide" id="end-screen">
+      <h2>Game Over</h2>
+      <p>final score: <span id="final-score"></span></p>
+      <p>
+        Enter Initals: <input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
